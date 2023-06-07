@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#keyPressAction" prefHeight="509.0" prefWidth="404.0" styleClass="anchor" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calc.mvc.CalcController">
+   <Label fx:id="results" alignment="CENTER_RIGHT" layoutX="27.0" layoutY="20.0" prefHeight="93.0" prefWidth="351.0" styleClass="numberLabel" text="0">
+      <font>
+         <Font name="Arial" size="40.0" />
+      </font></Label>
+   <ButtonBar fx:id="numbers1" buttonMinWidth="80.0" layoutX="6.0" layoutY="192.0" prefHeight="40.0" prefWidth="254.0">
+      <buttons>
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="numberButton" text="1" />
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="numberButton" text="2" />
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="numberButton" text="3" />
+      </buttons>
+   </ButtonBar>
+   <Button alignment="CENTER" focusTraversable="false" layoutX="298.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#add" prefHeight="50.0" prefWidth="80.0" styleClass="functionalButton" text="+" />
+   <ButtonBar fx:id="numbers2" buttonMinWidth="80.0" layoutX="6.0" layoutY="252.0" prefHeight="40.0" prefWidth="200.0">
+      <buttons>
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="numberButton" text="4" />
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="numberButton" text="5" />
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="numberButton" text="6" />
+      </buttons>
+   </ButtonBar>
+   <ButtonBar fx:id="numbers3" buttonMinWidth="80.0" layoutX="6.0" layoutY="312.0" prefHeight="40.0" prefWidth="200.0">
+      <buttons>
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="numberButton" text="7" />
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="numberButton" text="8" />
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="numberButton" text="9" />
+      </buttons>
+   </ButtonBar>
+   <ButtonBar buttonMinWidth="80.0" layoutX="-13.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="300.0">
+      <buttons>
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#removeOne" prefHeight="50.0" prefWidth="50.0" styleClass="functionalButton" text="&lt;-" />
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clearAll" prefHeight="50.0" prefWidth="50.0" styleClass="functionalButton" text="C" />
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clear" prefHeight="50.0" prefWidth="50.0" styleClass="functionalButton" text="CE" />
+      </buttons>
+   </ButtonBar>
+   <Button alignment="CENTER" focusTraversable="false" layoutX="298.0" layoutY="191.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#subtract" prefHeight="50.0" prefWidth="80.0" styleClass="functionalButton" text="-" />
+   <Button alignment="CENTER" focusTraversable="false" layoutX="298.0" layoutY="252.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#multiply" prefHeight="50.0" prefWidth="80.0" styleClass="functionalButton" text="x" />
+   <Button alignment="CENTER" focusTraversable="false" layoutX="298.0" layoutY="312.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#divide" prefHeight="50.0" prefWidth="80.0" styleClass="functionalButton" text="÷" />
+   <ButtonBar buttonMinWidth="80.0" layoutX="6.0" layoutY="374.0" prefHeight="40.0" prefWidth="200.0">
+      <buttons>
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#getDot" prefHeight="50.0" prefWidth="50.0" styleClass="numberButton" text="." />
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#getZero" prefHeight="50.0" prefWidth="50.0" styleClass="numberButton" text="0" />
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#modulo" prefHeight="50.0" prefWidth="50.0" styleClass="functionalButton" text="mod" />
+      </buttons>
+   </ButtonBar>
+   <ButtonBar buttonMinWidth="80.0" layoutX="6.0" layoutY="437.0" prefHeight="40.0" prefWidth="180.0">
+      <buttons>
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#sqrt" prefHeight="50.0" prefWidth="50.0" styleClass="functionalButton" text="√x" />
+         <Button alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#powTwo" prefHeight="50.0" prefWidth="50.0" styleClass="functionalButton" text="x²" />
+      </buttons>
+   </ButtonBar>
+   <Button alignment="CENTER" layoutX="206.0" layoutY="437.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#equals" prefHeight="50.0" prefWidth="171.0" styleClass="equalButton" text="=" />
+   <Label fx:id="numLabel" alignment="BOTTOM_RIGHT" layoutX="27.0" layoutY="89.0" prefHeight="26.0" prefWidth="351.0" styleClass="calculationLabel" />
+   <Label fx:id="modeLabel" alignment="TOP_RIGHT" layoutX="367.0" layoutY="85.0" prefHeight="10.0" prefWidth="10.0" styleClass="modeLabel">
+      <font>
+         <Font name="Arial" size="12.0" />
+      </font>
+   </Label>
+   <Button alignment="CENTER" focusTraversable="false" layoutX="297.0" layoutY="374.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#percent" prefHeight="50.0" prefWidth="80.0" styleClass="functionalButton" text="\%" />
+</AnchorPane>

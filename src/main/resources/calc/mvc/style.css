@@ -1,0 +1,38 @@
+.anchor {
+    -fx-background-color: #000;
+}
+
+.button {
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 1.5em;
+}
+
+.label {
+    -fx-text-fill: #fff;
+    -fx-background-color: #70a5ff;
+}
+
+.equalButton {
+    -fx-background-color: #4747cd;
+}
+
+.equalButton:hover {
+    -fx-background-color: #5858de;
+}
+
+.functionalButton {
+    -fx-background-color: #364162;
+}
+
+.functionalButton:hover {
+    -fx-background-color: #475273;
+}
+
+.numberButton {
+    -fx-background-color: #161f31;
+}
+
+.numberButton:hover {
+    -fx-background-color: #272f42;
+}
